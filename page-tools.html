@@ -1,7 +1,7 @@
 <html>
 
 	<head> 
-		<title>Vegan Fitness Recipes</title>
+
 
 
 		<link href="data:image/x-icon;base64,AAABAAEAEBAQAAEABAAoAQAAFgAAACgAAAAQAAAAIAAAAAEABAAAAAAAgAAAAAAAAAAAAAAAEAAAAAAAAAAp8g8AAAAAAC7PGQAikRMA////AMxwHwCx26sAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEREREREREREREREREREREREREREREREREREREiEREREREREjAhEREREREyJVIREREREiIFUCEREREiREVVMhEREjNBRVUiIREgIkFFUDMiESICREVVVSIRImIDJVVVIhESIiYmYiIhERERERERERERERERERERERERERERERERH//wAA//8AAP//AAD+fwAA/D8AAPgfAADwDwAA4AcAAMADAACAAQAAgAEAAIABAADAAwAA//8AAP//AAD//wAA" rel="icon" type="image/x-icon" />
@@ -18,24 +18,26 @@
 		<p><center><font size="4">Home || Categories || About || <a href="page-tools.html">Tools</a> || Contact</font></center></p>
 
 
+<!DOCTYPE html>
+<html>
+<title>Kilograms to Pounds Weight Converter</title>
+<body>
+
+<h2>Weight Converter</h2>
+<p>Type a value in the Kilograms field to convert the value to Pounds:</p>
+
+<p>
+  <label>Kilograms</label>
+  <input id="inputKilograms" type="number" placeholder="Kilograms" oninput="weightConverter(this.value)" onchange="weightConverter(this.value)">
+</p>
+<p>Pounds: <span id="outputPounds"></span></p>
+
+<script>
+function weightConverter(valNum) {
+  document.getElementById("outputPounds").innerHTML=valNum*2.2046;
+}
+</script>
 </body>
-</html>
-
-
-
-
-
-
-
-	</body>
-
-
-
-
-
-
-
-
-
 
 </html>
+</body>
